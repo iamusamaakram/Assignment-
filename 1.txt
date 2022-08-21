@@ -1,0 +1,46 @@
+// Write a program that will create a Class ‘Car’ and its fields like CarModel, CarName, CarPrice and CarOwner. The program should include
+ functions to assign values to the above mentioned fields and a display function to show the values
+
+void main() {
+  var car = Car();
+  car.carValues("Usama", "Honda Civic", "2022", 7500000);
+  var car2 = Car2();
+  car2.carValues2();
+}
+
+class Car {
+  late String carOwner;
+  late String carName;
+  late String carModel;
+  late int carPrice;
+
+  dynamic carValues(
+      String carOwner, String carName, String carModel, int carPrice) {
+    this.carOwner = carOwner;
+    this.carName = carName;
+    this.carModel = carModel;
+    this.carPrice = carPrice;
+    print("car Owner name is ${carOwner}");
+    print("car Name  is ${carName}");
+    print("car Model  is ${carModel}");
+    print("car Price is ${carPrice}");
+  }
+}
+
+class Car2 {
+  late String carOwner;
+  late String carName;
+  late String carModel;
+  late int carPrice;
+
+  dynamic carValues2(
+      {String carOwner = "Usama",
+      String carName = "Honda civic",
+      String carModel = "2022",
+      int carPrice = 8000000}) {
+    print(carOwner);
+    print(carName);
+    print(carModel);
+    print(carPrice);
+  }
+}

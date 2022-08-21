@@ -1,0 +1,25 @@
+// Write a program by creating an 'Employee' class having the following
+// methods and print the final salary of employee. 1 - 'getInfo()'
+// this method will take (a) name of the employee (b) hourly rate and (c)
+// total working hours in a month as parameter and will do assignment ‘printSalary()’
+// this method will print the emoloyee’s monthly salary along with employee name
+void main() {
+  var employee = Employee();
+  employee.getinfo();
+  employee.printSlaray();
+}
+
+class Employee {
+  late String name;
+  late int hourlyRate;
+  late int tottalWorkingHour;
+  dynamic getinfo() {
+    name = 'Ali';
+    hourlyRate = 200;
+    tottalWorkingHour = 25;
+  }
+
+  dynamic printSlaray() {
+    print('The Monthly Salary of ${name} is ${hourlyRate * tottalWorkingHour}');
+  }
+}

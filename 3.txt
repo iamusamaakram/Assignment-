@@ -1,0 +1,23 @@
+// Print the sum, difference and product of two complex numbers by creating
+// a class named 'Complex' with separate methods for each operation and 
+// numbers will be passed while function calling through object
+void main() {
+  var complex = Complex();
+  complex.value(75, 50);
+  complex.value2(80, 50);
+  complex.value3(100, 100);
+}
+
+class Complex {
+  dynamic value(int no1, int no2) {
+    print("sum of no1 andd no2 is = ${no1 + no2}");
+  }
+
+  dynamic value2(int no3, int no4) {
+    print("Difference of no3 and no4 is = ${no3 - no4}");
+  }
+
+  dynamic value3(int no5, int no6) {
+    print('Product of no5 and no6 is = ${no5 * no6}');
+  }
+}
